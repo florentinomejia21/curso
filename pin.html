@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinterest PIN</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI";
+      }
+
+      section {
+        position: relative;
+      }
+
+      .enviar,
+      .favorito,
+      .guardar {
+        background: url("assets/img/sprite-pin.fw.png");
+        width: 20px;
+        height: 20px;
+      }
+
+      .enviar-contenedor,
+      .favorito-contenedor,
+      .guardar-contenedor {
+        position: absolute;
+      }
+
+      .favorito-contenedor {
+        left: 30px;
+      }
+
+      .enviar-contenedor,
+      .favorito-contenedor {
+        background: #ccc;
+        padding: 3px;
+        border-radius: 2px;
+      }
+
+      .guardar-contenedor {
+        top: 1px;
+        right: 1px;
+        background: #bd081c;
+        color: #fff;
+        font-weight: bold;
+        padding: 4px 6px;
+        border-radius: 2px;
+      }
+
+      .enviar {
+        background-position: 0 0;
+      }
+
+      .favorito {
+        background-position: -22px 0;
+      }
+
+      .guardar {
+        background-position: 20px 0;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .pin {
+        width: 230px;
+      }
+      .top {
+        background: url("assets/img/imagen.jpg");
+        height: 346px;
+      }
+      p {
+        color: #676767;
+      }
+
+      @media (max-width: 700px) {
+        body {
+          background: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="pin">
+        <section class="top">
+          <div class="enviar-contenedor">
+            <div class="enviar"></div>
+          </div>
+
+          <div class="favorito-contenedor">
+            <div class="favorito"></div>
+          </div>
+          <div class="guardar-contenedor">
+            <div class="guardar"></div>
+            <span>Guardar</span>
+          </div>
+        </section>
+        <section class="bottom">
+          <h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A ipsam
+            cum aliquid ut, aspernatur quis illum consectetur vel odio,
+            exercitationem enim ad facere totam ipsum modi. Voluptas aut placeat
+            ab?
+          </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
+            totam nemo ut, vel soluta possimus eum earum odit quae cum beatae
+            quasi tempore architecto dolorum impedit sint voluptates explicabo
+            repellat!
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
