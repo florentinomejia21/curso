@@ -34,6 +34,8 @@
         pagina.addEventListener("click", function() { onClick(pagina.dataset.num) });
       }
 
+      let newLine = "nueva línea";
+
       function onClick(numeroPagina) {
         fetch("https://reqres.in/api/users?page=" + numeroPagina )
         .then((response) => response.json())
